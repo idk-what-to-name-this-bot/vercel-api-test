@@ -8,8 +8,6 @@ import { ConfigModule } from '@nestjs/config';
     ConfigModule.forRoot({
       envFilePath: '.env',
     }),
-    UsersModule,
-    AuthModule,
     MongooseModule.forRoot(
       process.env.MONGODB_HOST,
     ),
